@@ -75,7 +75,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     </form>
 
     <ul>
-        <?php foreach ($todo->getTask() as $index => $task): ?>
+        <?php foreach ($todo->getTasks() as $index => $task): ?>
             <li class="task-item">
                 <div><?php echo $task; ?></div>
                 <form method="post">
